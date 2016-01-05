@@ -1,0 +1,8 @@
+rm RHO*.dat
+rm results.dat
+rm mpi.dat
+rm log.dat
+rm a.out*
+rm S*.dat
+rm free*.dat
+mpic++ -std=gnu99 *.cpp -o a.out -I /home/tangjz/Soft/fftw-2.1.5-intel/include -I /home/tangjz/Soft/pfft/include -I /home/tangjz/Soft/fftw3.3.3/include -L /home/tangjz/Soft/pfft/lib -L /home/tangjz/Soft/fftw3.3.3/lib  -lm -O2 -lpfft -lfftw3_mpi -lfftw3
